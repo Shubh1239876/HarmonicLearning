@@ -660,7 +660,7 @@ select.form-control {
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(135deg, var(--color-primary) 0%, rgba(33, 128, 141, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(50, 184, 198, 1) 0%, rgb(178, 217, 221) 100%);
   color: white;
   overflow: hidden;
 }
@@ -677,7 +677,7 @@ select.form-control {
   object-position: center;
   
   /* These properties are kept from the original */
-  opacity: 0.3;
+  opacity: 0.9;
   z-index: 1;
 }
 
@@ -691,7 +691,7 @@ select.form-control {
 }
 
 .hero-title {
-  color:azure;
+  color:rgb(255, 255, 255);
   font-size: 6rem;
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-16);
@@ -743,7 +743,9 @@ select.form-control {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-16);
+  max-width: 100%;  /* Override the default max-width */
+  margin: 0 8;        /* Remove the 'auto' left/right margin */
+ padding: var(--space-16) 64px;
 }
 
 .nav-brand h2 {
